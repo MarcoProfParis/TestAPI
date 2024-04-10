@@ -6,7 +6,7 @@ window.function = async function(key1, jsonstring) {
     console.log("apiUrl:", apiUrl);
     console.log("requestOptions:", requestOptions);
     try {
-        let delivery = await api(apiUrl,requestOptions); // await here
+        let delivery = await api(apiUrl); // await here
         console.log("delivery:", delivery);
         return delivery;
     } catch (error) {
