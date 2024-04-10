@@ -23,3 +23,10 @@ window.function = async function(key1, jsonstring) {
         return "Error fetching data"; // Handle error accordingly
     }
 };
+
+window.function(key1, jsonstring);
+
+// Puis exécute la fonction toutes les minutes
+setInterval(() => {
+    window.function(key1, jsonstring);
+}, 60 * 1000); 
