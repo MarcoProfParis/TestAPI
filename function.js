@@ -22,7 +22,7 @@ async function api(apiUrl,requestOptions){ // async keyword here
         const text = await response.text();
         console.log("text:", text);
         let data = JSON.parse(text);
-        return data.delivery;
+        return text;
     } catch (error) {
         console.error("API Error:", error);
         throw error; // Rethrow the error to handle it in the calling function
