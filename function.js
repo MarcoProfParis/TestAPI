@@ -4,7 +4,7 @@ window.function = async function(key1, jsonstring) {
     let apikey = key1.value;
     console.log("apikey:", apikey);
     const apiUrl = json.url;
-    const headers = {"X-CMC_PRO_API_KEY":"${apikey}","Accept":"application/json"};
+    const headers = {"X-CMC_PRO_API_KEY":'${apikey}',"Accept":"application/json"};
     console.log("headers:", headers);
     const requestOptions = { 
         method:'GET',
