@@ -1,10 +1,10 @@
 window.function = async function(key1, jsonstring) {
     if (jsonstring.value === undefined || jsonstring.value === '') return "En attente json...";
     let json = JSON.parse(jsonstring.value);
-    let apikey = key1.value;
+    const apikey = key1.value;
     console.log("apikey:", apikey);
     const apiUrl = json.url;
-    const headers = {"X-CMC_PRO_API_KEY":"10ab3cc1-3005-4304-89b4-fd7d60ec00f6","Accept":"application/json"};
+    const headers = {'X-CMC_PRO_API_KEY':'${apikey}','Accept':'application/json'};
     console.log("headers:", headers);
     const requestOptions = { 
         method:'GET',
